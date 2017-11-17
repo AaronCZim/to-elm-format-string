@@ -23,6 +23,7 @@ main =
                 |> toElmFormatString
                 |> text
             ]
+        , hr [] []
         , pre []
             [ { one = 1
               , two =

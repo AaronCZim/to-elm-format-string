@@ -23,15 +23,15 @@ toElmFormatString model =
 foldRecord chr ( indentCnt, str ) =
     if chr == ',' then
         ( indentCnt
-        , String.cons '\n' (indent (String.cons chr str) indentCnt)
+        , String.cons '\n' (indent (String.cons chr (String.cons ' ' str)) indentCnt)
         )
-    else if chr == '{' || chr == '[' then
+    else if chr == '{' || chr == '[' || chr == '(' then
         ( indentCnt - 4
-        , String.cons '\n' (indent (String.cons chr str) indentCnt)
+        , String.cons '\n' (indent (String.cons chr (String.cons ' ' str)) indentCnt)
         )
-    else if chr == '}' || chr == ']' then
+    else if chr == '}' || chr == ']' || chr == ')' then
         ( indentCnt + 4
-        , String.cons '\n' (indent (String.cons chr str) (indentCnt + 4))
+        , String.cons '\n' (indent (String.cons chr (String.cons ' ' str)) (indentCnt + 4))
         )
     else
         ( indentCnt, String.cons chr str )
