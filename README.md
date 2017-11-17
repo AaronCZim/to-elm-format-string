@@ -1,2 +1,2 @@
 # to-elm-format-string
-A quick way to see the module as your programs run.
+A quick way to see the model as your programs run.
