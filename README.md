@@ -4,4 +4,4 @@ A quick way to see the model as your programs run. There is only one function, t
 Just add the line:
 Html.pre [][ model |> toElmFormatString |> text ]
 
-to the bottom of your view function and you'll never wonder what the value of your model is again.
+to the end of your view function and you'll never wonder what the value of your model is again.
