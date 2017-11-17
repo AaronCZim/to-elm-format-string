@@ -12,6 +12,7 @@ to your code, you can see exactly what's going on in your program at any time.
 {-| Accepts single values, List, and Records of any depth
 and inserts newlines with tabulation according to the elm formatting rules.
 -}
+toElmFormatString : model -> String
 toElmFormatString model =
     model
         |> toString
