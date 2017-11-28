@@ -1,6 +1,6 @@
 {
-    "version": "1.0.2",
-    "summary": "toElmFormatString adds newlines and tabulation to toString",
+    "version": "1.0.3",
+    "summary": "toElmFormatString adds newlines and indentation to toString",
     "repository": "https://github.com/AaronCZim/to-elm-format-string.git",
     "license": "BSD3",
     "source-directories": [
